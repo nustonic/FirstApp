@@ -86,6 +86,10 @@ const Authentication = () => {
 
     return (
         <div className="container">
+            <div className="login-img">
+                <img height={100} width={100} src="https://media.istockphoto.com/id/1299615596/vector/futuristic-golden-bitcoin-digital-currency-computer-circuit-board-cryptocurrency-mining-sci.jpg?s=612x612&w=0&k=20&c=fWGGI_UvdtMa-AtSbhP5CtYzzNwnGydJzr0bx47kxDU="></img>
+            </div>
+            <h2>ATM Cryptos System</h2>
             <div className="tabs">
                 <button
                     className={activeTab === "login" ? "active" : ""}
@@ -178,10 +182,23 @@ const Authentication = () => {
             <style jsx>
                 {`
           .container {
-            max-width: 800px;
+            max-width: 400px;
             margin: 0 auto;
             padding: 20px;
+            background-color:#000;
+            border-radius:10px;
+            text-align:center;
+            color:  white;
+           
+          
           }
+       
+            .login-img img{
+             border-radius: 50%;
+            margin-bottom: 15px;
+            border: solid 5px white;
+            item-align: center;
+            }
           .tabs {
             display: flex;
             margin-bottom: 20px;
@@ -209,10 +226,13 @@ const Authentication = () => {
           }
           button {
             padding: 10px;
-            background-color: #4caf50;
+            background-color: #20b7e6;
             color: white;
             border: none;
             cursor: pointer;
+              font-family: Phetsarath OT;
+            font-size: 14px;
+            border-radius:10px;
           }
           button:disabled {
             background-color: #cccccc;
