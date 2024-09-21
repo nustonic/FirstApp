@@ -14,6 +14,7 @@ import Day10 from "./Day10";
 import CartPage from './CartPage';
 import Authentication from './Authentication.js';
 import EditPost from './EditPost.js';
+import CurrencyConverter from "./CurrencyConverter";
 const AppRouter =()=>{
     return(
         <Router>
@@ -31,7 +32,7 @@ const AppRouter =()=>{
         <Route path='/profile' element={<Day9></Day9>}></Route>
         <Route path='/products' element={<Day10></Day10>}></Route>
         <Route path='/cart' element={<CartPage></CartPage>}></Route>
-        <Route path="/cart" component={CartPage} />
+        <Route path="/converter" element={<CurrencyConverter />} />
         <Route path='/edit/:id' element={<EditPost></EditPost>}></Route>
         </Routes>
         </Router>

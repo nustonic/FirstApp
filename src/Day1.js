@@ -48,6 +48,7 @@ function Day1() {
             <div className="tap-head">
                 <img id="img1" src="https://i.pinimg.com/736x/82/1a/26/821a26799dda29716c6e3ba17b22134b.jpg" alt="header" />
                 <center>
+                <button onClick={()=>{navigate('/converter')}}>Coin Convert</button>
                     <h1>ອັນດັບຫຼຽນ crypto ຍອດນິຍົມ</h1>
                     <input
                         type="text"
